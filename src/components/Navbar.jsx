@@ -1,25 +1,20 @@
-import { NavbatBrand } from "./NavbarBrand";
-import { NavbarMenu } from "./NavbarMenu";
-import { NavbarToggler } from "./NavbarToggler";
+import { NavbarBrand } from "./NavbarBrand";
+import { NavbarMenu } from "./NavbarMenu"
 
-const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Privacy", path: "/privacy" },
-  { name: "Terms", path: "/terms" },
-  { name: "Contact", path: "/contact" },
-];
-
-
-export const  Navbar = ({brand,}) =>{
-
+export const  Navbar = ({navItems}) =>{
     return (
-        <nav>
-            <div className="flex justify-between ml-10 mr-10">
-               <NavbatBrand brand={brand}/>
-                <NavbarToggler/>
-                <NavbarMenu navItems={navItems}/>
-            </div>
-        </nav>
-    )
+      <nav className="bg-gray-900 text-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center py-4">
+
+            
+            <NavbarBrand brand="Deepak"/>
+          <button>
+            <span></span>
+          </button>
+          <NavbarMenu navItems={navItems} />
+          </div>
+        </div>
+      </nav>
+    );
 }

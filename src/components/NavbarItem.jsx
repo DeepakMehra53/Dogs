@@ -1,7 +1,14 @@
-export const NavbarItem =({name,link})=>{
+import { Link } from "react-router-dom"
+
+export const NavbarItem = ({name,path}) =>{
     return (
-        <li>
-            <a href={link}>{name}</a>
-        </li>
-    )
+      <li className="hidden md:flex space-x-6">
+        <Link
+          to={path}
+          className="block py-2 px-4 text-white hover:text-gray-300 transition duration-200"
+        >
+          {name}{" "}
+        </Link>
+      </li>
+    );
 }

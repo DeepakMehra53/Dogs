@@ -1,17 +1,14 @@
-import { Navbar } from "./components/Navbar";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { Home } from "./components/Home";
 
-export const App = () =>{
-  
+export const App = () => {
   return (
     <>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-      </Routes>
-    </Router>
-    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
-    
   );
-}
+};

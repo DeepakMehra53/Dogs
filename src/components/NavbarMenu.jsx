@@ -1,13 +1,11 @@
 import { NavbarItem } from "./NavbarItem"
 
 export const NavbarMenu =({navItems})=>{
-    return(
-        <div>
-            <ul>
-                {navItems.map((item,index)=>(
-                    <NavbarItem key={index} name={item.name}  path={item.path}/>
-                ))}
-            </ul>
-        </div>
-    )
+    return (
+      <ul className="flex flex-col md:flex-row md:space-x-6 text-lg">
+        {navItems.map((item, index) => (
+          <NavbarItem key={index} name={item.name} path={item.path} />
+        ))}
+      </ul>
+    );
 }

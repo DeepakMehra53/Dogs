@@ -1,5 +1,7 @@
-export const NavbatBrand =({brand})=>{
-    return (
-        <a href="index.html" >{brand}</a>
+export const NavbarBrand =({brand})=>{
+    return(
+        <div className="text-2xl font-bold">
+            <a href="/" className="text-white">{brand}</a>
+        </div>
     )
 }
