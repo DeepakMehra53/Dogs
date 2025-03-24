@@ -1,29 +1,17 @@
-const navLinks = [
-  { name: "Home", href: "index.html" },
-  { name: "About", href: "about.html" },
-  { name: "Privacy", href: "privacy.html" },
-  { name: "Terms", href: "terms.html" },
-  { name: "Contact", href: "contact.html" },
-];
+import { NavbatBrand } from "./NavbarBrand";
+import { NavbarMenu } from "./NavbarMenu";
+import { NavbarToggler } from "./NavbarToggler";
 
-export const  Navbar = () =>{
+
+
+export const  Navbar = ({brand,navItems}) =>{
 
     return (
         <nav>
-            <div>
-                <a href=""></a>
-                <button>
-                    <span></span>
-                </button>
-            </div>
-            <div>
-                <ul className="flex justify-center ">
-                    {navLinks.map((link,index)=>(
-                        <li key={index}>
-                            <a href={link.href}>{link.name}</a>
-                        </li>
-                    ))}
-                </ul>
+            <div className="flex justify-between">
+               <NavbatBrand brand={brand}/>
+                <NavbarToggler/>
+                <NavbarMenu navItems={navItems}/>
             </div>
         </nav>
     )
