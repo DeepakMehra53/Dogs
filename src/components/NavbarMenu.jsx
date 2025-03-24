@@ -5,7 +5,7 @@ export const NavbarMenu =({navItems})=>{
         <div>
             <ul>
                 {navItems.map((item,index)=>(
-                    <NavbarItem key={index} {...item}/>
+                    <NavbarItem key={index} name={item.name}  path={item.path}/>
                 ))}
             </ul>
         </div>

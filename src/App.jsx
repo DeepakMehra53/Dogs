@@ -1,18 +1,17 @@
 import { Navbar } from "./components/Navbar";
-const navItems = [
-  { name: "Home", href: "index.html" },
-  { name: "About", href: "about.html" },
-  { name: "Privacy", href: "privacy.html" },
-  { name: "Terms", href: "terms.html" },
-  { name: "Contact", href: "contact.html" },
-];
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+
 export const App = () =>{
   
   return (
     <>
-    <Navbar brand="Deepak" navItems={navItems}/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
+    </Router>
     
-</>
+    </>
     
   );
 }
