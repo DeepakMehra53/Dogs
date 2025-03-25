@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Chuila';
+    src: url('./fonts/Chuila.otf') format('woff2'),
+        url('./fonts/Chuila.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brand{
+    font-family: Chuila;
+    font-size: 2rem;
+}

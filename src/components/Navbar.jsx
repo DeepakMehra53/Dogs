@@ -8,7 +8,7 @@ export const  Navbar = ({navItems}) =>{
             <div className="flex justify-between items-center py-4">
 
             
-            <NavbarBrand brand="Deepak"/>
+            <NavbarBrand brand="DOWGRAB"/>
           <button>
             <span></span>
           </button>
