@@ -2,6 +2,8 @@ import Product1 from '../assets/Product1.webp'
 import Product2 from '../assets/Product2.webp'
 import Product3 from '../assets/Product3.webp'
 import Product4 from '../assets/Product4.webp'
+import Product5 from '../assets/Product5.webp'
+import Product6 from '../assets/Product6.webp'
 
 export const ProductPage = () =>{
      const products = [
@@ -35,15 +37,17 @@ export const ProductPage = () =>{
        },
        {
          id: 5,
-         name: "Product 5",
-         image: "/assets/product5.png",
-         desc: "Premium quality.",
+         name: "The Hotdog Sausage Dog Lead ",
+         image: Product5,
+         desc: "The Hotdog Sausage Dog Lead - Handmade in the UK - Fun Dog Leash - Perfect for Dachshunds, Puppies and Small Dogs - Gift for Dogs",
+         Price: 110,
        },
        {
          id: 6,
-         name: "Product 6",
-         image: "/assets/product6.png",
-         desc: "Value for money.",
+         name: "Personalized Pet Name Blanket for Dog",
+         image: Product6,
+         desc: "Personalized Pet Name Blanket for Dog, Custom Name Dog Blanket, Thick Fleece Pet Blanket, Paw Print Blanket, Embroiderd Dog Name Blanket",
+         Price:100
        },
      ];
     return (
