@@ -64,6 +64,7 @@ export const ProductPage = () =>{
               <h3 className="text-2xl font-bold mt-2">{product.name}</h3>
               <p className="text-fuchsia-100 text-xl font-medium">{product.desc}</p>
               <p className='text-green-800 font-extrabold text-4xl'>${product.Price}</p>
+              <button className='rounded-2xl bg-amber-600 p-3 mt-2 font-bold' onClick={()=>{console.log("Good")}}>Add to Cart</button>
             </div>
           ))}
         </div>
