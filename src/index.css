@@ -7,6 +7,9 @@
     font-weight: normal;
     font-style: normal;
 }
+.body,html{
+    background:mistyrose;
+}
 
 .brand{
     font-family: Chuila;
